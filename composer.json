@@ -1,0 +1,23 @@
+{
+	"config": {
+		"platform": {
+			"php": "7.4"
+		}
+	},
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"Lib\\": "lib/",
+			"App\\": "app/",
+			"Pauldro\\Minicli\\": "dev/"
+		}
+	},
+	"require": {
+		"vlucas/phpdotenv": "5.4.x-dev",
+		"minicli/minicli": "v2.0.x-dev",
+		"pauldro/minicli-v1": "dev-main",
+		"phpoffice/phpspreadsheet": "1.25.0",
+		"cache/simple-cache-bridge": "^1.1",
+		"cache/apcu-adapter": "^1.1"
+	}
+}

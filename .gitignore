@@ -1,0 +1,14 @@
+# Editor files
+/.vscode/
+
+# Dev
+/app/Cmd/Test/
+/dev/
+
+# Vendor
+/vendor/
+
+# Environment Files
+/.env
+/.envs/
+/logs/

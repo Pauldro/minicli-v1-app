@@ -1,0 +1,44 @@
+#!/usr/bin/php
+<?php
+
+session_start();
+
+if (php_sapi_name() !== 'cli') {
+	exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Pauldro\Minicli\App\App;
+use Pauldro\Minicli\Util\EnvVarsReader as EnvVars;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$app = new App([
+	'theme'           => '\Unicorn',
+	'app_description' => 'Handle commands',
+	'base_path'       => __DIR__ . '/',
+	'cmd_dir'         => __DIR__ . '/app/Cmd',
+	'cmd_namespace'   => '',
+	'debug'           => true,
+	'log_dir'         => __DIR__ . '/logs',
+    'php_ini' => [
+        'dir' => __DIR__ . '/php.d/',
+        'files' => [
+            'php-cli.ini'
+        ]
+	],
+	'scriptname'      => 'minicli',
+]);
+
+$app->setSignature("./minicli ");
+
+try {
+	$app->runCommand($argv);
+} catch (Exception $exception) {
+    if ($app->config->debug) {
+        $app->printer->error("An error occurred:");
+        $app->printer->error($exception->getMessage());
+    }
+}
