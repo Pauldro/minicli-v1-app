@@ -23,3 +23,9 @@ Look at the .env-example file for variables that should be set
 ## install.sh
 
 Set up server environment by running this shell script as root
+
+## Setup PHP CLI environment
+
+1. Run ``` ln -s /usr/bin/php /usr/bin/phpcli ``` for default php
+OR
+1. Run ``` ln -s /usr/bin/php72 /usr/bin/phpcli ``` for php 7.2
