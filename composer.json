@@ -1,4 +1,5 @@
 {
+	"name": "pauldro/minicli-v1-app",
 	"config": {
 		"platform": {
 			"php": "7.4"
