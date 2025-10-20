@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a674465db1a77f51a089ff8b7f45af67",
+    "content-hash": "b0f7e5b57180c27da6ba10dbbd05c4a9",
     "packages": [
         {
             "name": "cache/adapter-common",
@@ -700,12 +700,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pauldro/minicli-v1.git",
-                "reference": "961b4cc925f05e9b35da05a1e67b7948e6655404"
+                "reference": "0480a9ef6a539ae43c2025da5b9e1e31a4163c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pauldro/minicli-v1/zipball/961b4cc925f05e9b35da05a1e67b7948e6655404",
-                "reference": "961b4cc925f05e9b35da05a1e67b7948e6655404",
+                "url": "https://api.github.com/repos/Pauldro/minicli-v1/zipball/0480a9ef6a539ae43c2025da5b9e1e31a4163c68",
+                "reference": "0480a9ef6a539ae43c2025da5b9e1e31a4163c68",
                 "shasum": ""
             },
             "require": {
@@ -744,7 +744,7 @@
                 "issues": "https://github.com/Pauldro/minicli-v1/issues",
                 "source": "https://github.com/Pauldro/minicli-v1/tree/main"
             },
-            "time": "2025-09-10T19:41:26+00:00"
+            "time": "2025-10-20T17:07:35+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
