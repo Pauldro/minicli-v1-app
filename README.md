@@ -8,7 +8,7 @@ Template for cli apps using minicli
 like your base command to be called, make file executable using chmod
 
 ``` bash
-chmod +x minicli
+chmod +x {script}
 ```
 
 ## Help Command
@@ -28,4 +28,6 @@ Set up server environment by running this shell script as root
 
 1. Run ``` ln -s /usr/bin/php /usr/bin/phpcli ``` for default php
 OR
-1. Run ``` ln -s /usr/bin/php72 /usr/bin/phpcli ``` for php 7.2
+ Run ``` ln -s /usr/bin/php72 /usr/bin/phpcli ``` for php 7.2
+
+2. Then in the scripts update ``` /usr/php/cli ``` to ``` /usr/bin/phpcli ```
