@@ -11,10 +11,6 @@ like your base command to be called, make file executable using chmod
 chmod +x {script}
 ```
 
-## Help Command
-
-./{script} help will display help functions and the options available
-
 ## .env Environment Variables
 
 Set up your Environment by setting Variables in the .env file
